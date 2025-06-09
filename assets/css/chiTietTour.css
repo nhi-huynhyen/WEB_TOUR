@@ -219,7 +219,12 @@
 .dontour-container .confirm {
     background-color: var(--bright-navy-blue);
 }
-
+.dontour-container .confirm:hover,
+.dontour-container .cancel:hover,
+.dontour-container .pdf:hover,
+.dontour-container .quaylai:hover {
+    background-color: #c8e5ea;
+}
 .dontour-container .form-group #locationInfo, #contactInfo, #emailInfo{
     margin-left: -90px;
     width: 280px;

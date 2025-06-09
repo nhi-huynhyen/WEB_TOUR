@@ -308,6 +308,7 @@
 
 /* Search Bar */
 .search-bar {
+    width: 760px;
     margin: 15px 0;
 }
 
@@ -401,6 +402,8 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100px;
+    text-align: center;
 } 
 .order-details {
     display: flex;
@@ -423,19 +426,28 @@
 .order-summary p span{
     padding-left: 10px;
 }
-.order-summary .pay-btn {
+.order-summary .pay-btn, .paytour-btn{
     background-color: var(--bright-navy-blue);
     color: white;
 }
+.paytour-btn{
+    width: 120px;
+}
+.cancel-btn{
+    background-color: red; color: white; border: none;
+}
+
 .order-summary .rebook-btn {
     background-color: var(--bright-navy-blue);
     color: white;
 }
-.order-summary .cancel-btn {
-    background-color: #ddd;
-    color: #333;
+.paytour-btn:hover, .cancelpay-btn:hover, .apply:hover, .xemct:hover, .review-btn:hover{
+    background-color: #c8e5ea;
 }
-.review-btn{
+.cancel-btn:hover, .rebook-btn:hover{
+    background-color: #c8e5ea;
+}
+.review-btn, .cancelpay-btn{
     background-color: white;
     color: var(--bright-navy-blue);
     border: 1px solid var(--bright-navy-blue);
@@ -626,7 +638,7 @@ textarea::placeholder {
     margin-top: 20px;
 }
 
-.cancel-btn, .submit-btn {
+.submit-btn {
     padding: 10px 20px;
     border: 1px solid var(--bright-navy-blue);
     border-radius: 5px;
@@ -636,9 +648,6 @@ textarea::placeholder {
     transition: all 0.3s;
 }
 
-.cancel-btn:hover {
-    background: #f8f8f8;
-}
 
 .submit-btn {
     background: var(--bright-navy-blue);
@@ -670,3 +679,4 @@ textarea::placeholder {
     width: 150px;
     height: 150px;
 }
+
